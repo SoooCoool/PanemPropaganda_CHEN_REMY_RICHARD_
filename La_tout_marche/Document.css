@@ -1,0 +1,590 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    position: absolute;
+}
+
+header .logo  {
+    width:  100%;
+    height: auto;
+    background: linear-gradient(to right, grey, green);
+}
+
+/***************BOUTTONS****************/
+.nav-links{
+    flex: 1;
+    text-align: right;
+    background: linear-gradient(to right, grey, green);
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/**************************************/
+
+.main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background: linear-gradient(to right, grey, green);
+}
+
+.container
+{
+    position: relative;
+    margin-right: 30px ;
+}
+
+.container .card
+{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: rgb(123, 182, 133);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container .card:before
+{
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(146, 223, 156);
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.container .card:hover:before
+{
+    clip-path: circle(300px at 80% -20%);
+}
+
+
+.container .card .imgBx
+{
+    position: absolute;
+    top: 50%;
+    transition: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+.container .card:hover .imgBx
+{
+    top: 0%;
+    transition: translateY(0%);
+}
+
+.container .card .imgBx img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+}
+
+.container .card .contentBx
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.container .card:hover .contentBx
+{
+    height: 210px;
+}
+
+.container .card .contentBx h2
+{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(167, 106, 16);
+}
+
+.container .card .contentBx .etat,
+.container .card .contentBx .taille
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container .card:hover .contentBx .taille
+{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s ;
+}
+
+.container .card:hover .contentBx .etat
+{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s ;
+}
+
+
+.container .card .contentBx .etat h3,
+.container .card .contentBx .taille h3
+{
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.container .card .contentBx .etat span,
+.container .card .contentBx .taille span
+{
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #111111;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container .card .contentBx .etat span:hover,
+.container .card .contentBx .taille span:hover
+{
+    background-color: rgba(11, 158, 31, 0.445);
+}
+
+.container.card .contentBx a
+{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 50px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+
+.container.card:hover .contentBx a
+{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+
+/*********************** Titre***********************************/
+.page h1
+{
+    color: green; 
+    background-color: white;
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 5em;
+    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-weight: 600;
+
+    text-align: center;
+}
+
+.resumer, 
+.avis
+{
+    text-align: center;
+    position: relative;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.avis h3, 
+.resumer .accroche
+{
+    font-size: 18px;
+    font-weight: bold;
+    color: goldenrod;
+
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.text
+{
+    font-size: 17px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+/***********************ARTICLE***********************************/
+
+.page{
+    background: linear-gradient(to right, grey, green);
+}
+
+.Article{
+
+    background: linear-gradient(to right, grey, green);
+ 
+}
+
+.article h1
+{
+    color: green; 
+    background-color: white;
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 5em;
+    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-weight: 600;
+
+    text-align: center;
+}
+
+.article h4
+{
+    font-size: 17px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+}
+
+.article .img
+{
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.article h2
+{
+    color: goldenrod;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    text-align: justify;
+
+}
+
+.article-livre
+{
+    background: linear-gradient(to right, grey, green);
+}
+
+.article-livre img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.article .decouverte
+{
+    font-size: 25px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.article .decouverte:hover
+{
+    color: white;
+}
+
+/***********************FOOTER***********************************/
+footer
+{
+    display: flex;
+    position: relative;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    justify-content: flex-start;
+    background-color: gray;
+    justify-content: space-between;
+    height: auto;
+}
+
+
+ 
+.bordure
+{
+ 
+  width: 100%;
+ 
+}
+ 
+.le_footer 
+{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+ 
+.Panem 
+{
+ 
+    /*background-color: green;*/
+    padding: 15px;
+ 
+}
+ 
+.Nous
+{
+    /*background-color: purple;*/
+    padding: 15px;
+}
+ 
+.Services 
+{
+    /*background-color: red;*/
+    padding: 15px;
+}
+ 
+.Contactez 
+{
+    /*background-color: yellow;*/
+    padding: 15px;
+}
+ 
+.Panem,.Nous,.Services, .Contactez
+{
+    flex: 1; /* partage de largeur dispo par nombre de conteneurs*/
+}
+ 
+  
+a
+{
+      text-decoration: none;
+      color: black;
+      text-align: center;
+}
+
+
+ 
+/* Pour les titres du footer */
+.Panem h2
+{
+  text-align: center;
+  color: black;
+}
+ 
+.Nous h2
+{
+  text-align: center;
+  color: black;
+}
+ 
+.Services h2
+{
+  text-align: center;
+  color: black;
+}
+ 
+.Contactez h2
+{
+  text-align: center;
+  color: black;
+}
+ 
+/*Pour le texte*/
+.Panem p
+{
+  text-align: center;
+  font-size: 1.3em;
+  color: black;
+}
+
+
+ 
+  
+ 
+/*Pour la navigation de chaque colonne */
+.Panem ul
+{
+  text-align: center;
+  list-style: none;
+  text-decoration: underline;
+  font-size: 1.3em;
+}
+
+.Nous ul
+{
+  text-align: center;
+  list-style: none;
+  font-size: 1.3em;
+}
+ 
+.Services ul
+{
+  text-align: center;
+  list-style: none;
+  font-size: 1.3em;
+ 
+}
+ 
+.Contactez ul
+{
+  text-align: center;
+  list-style: none;
+  font-size: 1.3em;
+ 
+}
+  
+ 
+/*Pour régler la taille des icônes */
+ 
+.le_footer img
+  
+{
+      
+      flex: auto;
+      width: 10%;
+      height: auto;
+}
+
+
+ 
+/* La police pour "contactez-noous" */
+.le_footer .Contactez ul
+{
+  font-size: 1.3em;
+ 
+}
+ 
+/*Pour le copyright */
+ 
+.le_footer .fin 
+{
+  
+  width: 100%;
+  height: auto;
+ 
+}
+ 
+.fin .nom_site h1
+{
+  font-size: 2em;
+  text-align: center;
+  color: black;
+}
+ 
+.fin .copyright p
+{
+  font-size: 1em;
+  text-align: center;
+  color: black;
+}
+ 
+/* Pour adapter à l'écran*/
+  
+@media only screen and (max-width: 768px) 
+{
+    .Nous {
+      width: 50%;
+      order: 0;
+    }
+    .Panem {
+      width: 50%;
+      
+    }
+    .Services {
+      width: 50%;
+    }
+ 
+    .Contactez
+    {
+      width: 50%;
+    }
+ 
+    .Panem,
+    .Nous,
+    .Services, .Contactez {
+      flex: none;
+    }
+}

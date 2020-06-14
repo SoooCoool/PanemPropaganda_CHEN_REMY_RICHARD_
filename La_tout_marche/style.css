@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: "Robot", sans-serif;
+}
+
+body{
+
+
+    background-color: black;
+
+    font-size: 16 px; /* taille de la police */
+    color: white;
+
+
+    line-height: 1.3;/* hauteur de ligne*/
+
+    margin-left: 80px;
+    margin-right: 80px;
+}
+/*********************************************************/
+/******************** HAUT DE PAGE *********************/
+
+header{
+    /*position: fixed;  pour que la bannière ne bouge jamais */
+    background: black;
+
+}
+
+header .logo  {
+    width:  100%;
+    height: auto;
+}
+/*********************************************************/
+/******************** PIED DE PAGE *********************/
+
+footer{
+    display: flex;
+    background: grey;
+    margin-bottom: auto;
+
+    width: 100%;
+}
+
+footer .information a {
+    color: whitesmoke;
+    margin-left: 100px ;
+    padding: 50px 50px 50px;
+}
+
+
+.background{
+    float: center;
+    margin-top: 25px;
+}
+/*********************************************************/
+/******************** BOUTON MENUE *********************/
+.Bouton{
+    color: greenyellow;
+}
+/*********************************************************/
+
+.container{
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px), 1fr);
+    grid-template-rows: minmax(100px, auto);
+
+    margin: 40px;
+    grid-auto-flow: dense;
+
+    
+}
+
+.container .box{
+    background-color: rgba(0, 0, 0, 0.288);
+    padding: 20px;
+    display: grid;
+    font-size: 20px;
+
+    color: white;
+    transition: 0.5s;
+}
+
+.container .box :hover{
+    background-color: rgba(255, 166, 0, 0.212);
+}
+
+.container .box img{
+    margin-left: center;
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.container .box :nth-child(1){
+    float: left;
+    margin-right: auto;
+
+    margin-bottom: 30px;
+}
+
+
+.container .box :nth-child(2){
+    margin-right: auto;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+
+.container .box :nth-child(3){
+    float: left;
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.container .box :nth-child(4){
+    float: left;
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.container .box :nth-child(5){
+    float: left;
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+
+/*********************************************************/
+/******************** FICHER LIVRE *********************/
+.livre{
+    float: left;
+    background-color: whitesmoke;
+    
+    margin: auto;
+    margin-bottom: 15px;
+
+    width: 35%;
+    padding: 10px;
+    border: 2px solid black;
+    height: auto;   
+}
+.livre p{
+    color:blue;
+}
+.livre .img{
+    margin-left: 75px;
+    width: 45%x;
+    height: 300px;
+    border: 2px solid green;
+}
+.livre a{
+    color: black;
+
+    margin-left: 150px ;
+    padding: 50px 50px 50px;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.ArtLivre{
+    float: center;
+    background-color: beige;
+
+    margin: auto;
+    margin-bottom: auto;
+
+    width: 100%;
+    height: 55em;
+    padding: 10px;
+    border: 2px solid rgb(156, 156, 156);
+}
+
+.ArtLivre .ArtLivreTxt{
+    float: right;
+    background-color: beige;
+
+    margin: auto;
+
+    width: 70%;
+    padding: 10px;
+
+}
+
+.ArtLivre h1{
+    color: green;
+}
+
+.ArtLivre .ArtLivreTxt h3{
+    color: black;
+}
+
+.ArtLivre .ArtLivreTxt h4{
+    color: black;
+}
+.ArtLivre .ArtLivreTxt h5{
+    color: green;
+}
+
+.ArtLivre .ArtLivreTxt .img{
+    float: center;
+
+    width: 50%;
+    height: auto;
+}
+
+.ArtLivre .ArtLivreAvis{
+    float: center;
+    background-color: beige;
+
+    margin: auto;
+    margin-bottom: auto;
+
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(156, 156, 156);
+}
+.ArtLivre .ArtLivreAvis p{
+    color: rgba(0, 0, 0, 0.979);
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.FaireQuizz{
+    font-family: Arial, Helvetica, sans-serif;
+    color: beige;
+}
+
+

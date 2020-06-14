@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etes-vous un bon citoyen?</title>
+
+    <link rel="stylesheet" href="style-Quizz.css">
+    <script src="quiz.js" type="text/javascript"></script>
+
+</head>
+
+
+<body onLoad="init()"> 
+    <header>
+	
+		<img src="img/bannière.png" alt="logo" class="logo">
+		
+		<div class="Bouton">
+            <a href="Articles.html" class="btn ">Accueil</a>
+            <a href="Origine.html" class="btn ">Les Origines</a>
+            <a href="CapitolTV.html" class="btn "> CapitolTV</a>
+        </div>
+    </header>
+    
+    <form method="post">
+		<div id="contf" align="center">
+			<table border="4" width="460px">
+
+				<tr>
+				  <td bgcolor="white" align="center"><b>Question:</b></td>
+				  <td colspan="2" bgcolor="white" align="center"><textarea cols="80" rows="2" name="question"></textarea></td>
+				</tr>
+				<tr>
+				  <td align="center" bgcolor="white"><input type="text" name="tda" size="12" value=""></td>
+				  <td bgcolor="white" align="left" width="350"><input type="text" name="choiceA" size="70"></td>
+				  <td bgcolor="white" align="center" width="40px"><input type=button name="choixa" class="bout3" value="A" onClick="repa(this.form);testrep(this.form);"></td>
+				</tr>
+				<tr>
+				  <td align="center" bgcolor="white"><input type="text" name="tdb" size="12" value=""></td>
+				  <td bgcolor="white" align="left"><input type="text" name="choiceB" size="70"></td>
+				  <td bgcolor="white" align="center"><input type=button name="choixb" class="bout3" value="B" onClick="repb(this.form);testrep(this.form);"></td>
+				</tr>
+				<tr>
+				  <td align="center" bgcolor="white"><input type="text" name="tdc" size="12" value=""></td>
+				  <td bgcolor="white" align="left"><input type="text" name="choiceC" size="70"></td>
+				  <td bgcolor="white" align="center"><input type=button name="choixc" class="bout3" value="C" onClick="repc(this.form);testrep(this.form);"></td>
+				</tr>
+				<tr>
+				  <td align="center" bgcolor="#F2C986"><input type="text" name="tdd" size="12" value=""></td>
+				  <td bgcolor="white" align="left"><input type="text" name="choiceD" size="70"></td>
+				  <td bgcolor="white" align="center"><input type=button name="choixd" class="bout3" value="D" onClick="repd(this.form);testrep(this.form);"></td>
+				</tr>
+
+				<td colspan="3" bgcolor=white" align="left"><input type="hidden" name="yourChoice" size="4"></td>
+				</tr>
+				<tr>
+				  <td bgcolor="white" align="center"><input type="button" class="bout" value="Nouveau Jeu" onclick="clearForm(this.form);init(this.form);"></td>
+				  <td colspan="2" bgcolor="white" align="center"><input type="button" align="center" class="bout2" value="Question Suivante" onclick="clearRep(this.form);nextQuestion(this.form);"></td>
+				  </td>
+				</tr>
+				<tr>
+				  <td bgcolor="white" align="right"><b>Resultats:</b></td>
+				  <td colspan="2" bgcolor="white" align="center" background="white"><p><textarea COLS="80" ROWS="3" name="results"></textarea></td>
+				</tr>
+				<tr>
+				  <td bgcolor="white" align="right"><b>Score:</b></td>
+				  <td colspan="2" bgcolor="white"><b>&nbsp;&nbsp;Points:&nbsp;</b><input type="text" name="myScore" size="4">&nbsp;&nbsp;<b>sur&nbsp;&nbsp;</b><input type="text" name="questNo" size="4">
+				 
+				</tr>
+			</table>
+		</div>
+		
+	</form>
+
+	<br><br><br><br><br><br>
+	<footer class="page_footer">
+		<div class="le_footer">
+	
+			<div class="Panem">
+				<h2>Panem</h2>
+				<br>
+				<div class="bordure">
+					<p>Retrouvez chaque jours l'actualité passionnante de Panem chez vous</p>
+					<br> <br>
+					<ul class = "nav_footer"> 
+						<li> <a href="Articles.html"> Panem News </a></li><br>
+						<li> <a href="Page1.html"> Accueil </a></li>
+					</ul>
+					
+				</div>
+			</div>
+	
+			<div class="Nous">
+				<h2>A propos de nous</h2>
+				<br>
+				<ul class="nav_footer">
+					<li><a href="Qui-sommes-nous.html">Qui sommes nous</a></li><br/>
+					
+				</ul>
+	
+			</div>
+	
+			<div class="Services">
+				<h2>Services</h2>
+				<div class="bordure">
+					<br>
+					<ul class="nav_footer">
+						<li><a href="Quizz.html">Quizz</a></li><br/>
+						<li><a href="Form.html">Abonnez-vous</a></li><br/>
+						<li><a href="Boutique.html">La boutique</a></li><br/>
+					</ul>
+	
+				</div>
+			</div>
+	
+			<div class="Contactez">
+				<h2>Contactez-nous</h2>
+				<br>
+				<div class="bordure">
+				<ul class="nav_footer">
+					<li><a href="https://fr-fr.facebook.com/"><img src="image_footer/facebook.png" alt="icône facebook"> Facebook </a></li><br/>
+					<li><a href="https://www.instagram.com/"><img src="image_footer/instagram.png" alt="icône instagram"> Instagram</a></li><br/>
+					<li><a href="https://twitter.com/explore"><img src="image_footer/twitter.png" alt="icône twitter">  Twitter</a></li><br/>
+					<li><a href="https://www.youtube.com/"><img src="image_footer/youtube.png" alt="icône youtube"> Youtube</a></li><br/>
+					
+				</ul>
+				</div>
+			</div>
+	
+			<div class="fin">
+				<div class="nom_site">
+					<h1> PanemPropaganda.</h1>
+					
+					<div class="copyright">
+						<p>©2020 By Clément.Sophie.Victorine</p>
+						<br>
+					</div>
+				</div>
+		 </div>
+	
+		</div>
+	
+	</footer>
+</body>
+</html>

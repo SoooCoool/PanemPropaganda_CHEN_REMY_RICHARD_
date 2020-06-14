@@ -1,0 +1,50 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #262626;
+    background-image: url("Hanging_tree.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+
+.flash_text
+{
+    border-spacing: 0cm;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 70px;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: flash 0.3s linear infinite;
+}
+
+.flash_text:hover
+{
+    opacity: 0;
+    transform: rotate3d(1, 1, 1, 150deg);
+}
+
+@keyframes flash
+{
+    0% 
+    {
+        color: white;
+    }
+
+    50%
+    {
+        color: white;
+        text-shadow: none;
+    }
+
+    100%
+    {
+        color: rgb(187, 1, 1);
+    }
+}

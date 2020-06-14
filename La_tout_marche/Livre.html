@@ -1,0 +1,150 @@
+<html>
+<head>
+    <title>Livre</title>
+    <link rel="stylesheet" href="style-livre.css">
+</head>
+
+<body>
+    <header>
+        <img src = "img/bannière.png" alt = "logo" class = "logo">
+        <div class="button">
+            <a href="Articles.html" class="btn" target = "blank">Accueil</a>
+            <a href="Origine.html" class="btn" target = "blank">Les Origines</a>
+            <a href="CapitolTV.html" class="btn" target = "blank"> CapitolTV</a>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="img/Livre.jpg" class="mobile">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="img/Article.png">
+                    <div>
+                        <h1>Article</h1>
+                        <a href="Article.html" class="btn" target = "blank">Decouvrez</a></li></ul>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="img/Résumé.png">
+                    <div>
+                        <h1>Résumé</h1>
+                        <a href="Avis.html" class="btn" target = "blank">Découvrez</a>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="img/Avis.png">
+                    <h1>Avis</h1>
+                    <a href="Avis.html" class="btn" target = "blank"> Notre avis !</a>
+                </div>
+                <div class="feature four">
+                    <img src="img/Acheter.png">
+                    <div>
+                        <h1>Boutique</h1>
+                        <a href="Boutique.html" class="btn" target = "blank">Commander</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <div class="controls">
+        <img src="img/arrow.png" id="upBtn">
+        <h3>Options</h3>
+        <img src="img/arrow.png" id="downBtn">
+    </div>
+
+    <footer class="page_footer">
+        <div class="le_footer">
+    
+            <div class="Panem">
+                <h2>Panem</h2>
+                <br>
+                <div class="bordure">
+                    <p>Retrouvez chaque jours l'actualité passionnante de Panem chez vous</p>
+                    <br> <br>
+                    <ul class = "nav_footer"> 
+                        <li> <a href="Articles.html"> Panem News </a></li><br>
+                        <li> <a href="Page1.html"> Accueil </a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+    
+            <div class="Nous">
+                <h2>A propos de nous</h2>
+                <br>
+                <ul class="nav_footer">
+                    <li><a href="Qui-sommes-nous.html">Qui sommes nous</a></li><br/>
+                    
+                </ul>
+    
+            </div>
+    
+            <div class="Services">
+                <h2>Services</h2>
+                <div class="bordure">
+                    <br>
+                    <ul class="nav_footer">
+                        <li><a href="Quizz.html">Quizz</a></li><br/>
+                        <li><a href="Form.html">Abonnez-vous</a></li><br/>
+                        <li><a href="Boutique.html">La boutique</a></li><br/>
+                    </ul>
+    
+                </div>
+            </div>
+    
+            <div class="Contactez">
+                <h2>Contactez-nous</h2>
+                <br>
+                <div class="bordure">
+                <ul class="nav_footer">
+                    <li><a href="https://fr-fr.facebook.com/"><img src="image_footer/facebook.png" alt="icône facebook"> Facebook </a></li><br/>
+                    <li><a href="https://www.instagram.com/"><img src="image_footer/instagram.png" alt="icône instagram"> Instagram</a></li><br/>
+                    <li><a href="https://twitter.com/explore"><img src="image_footer/twitter.png" alt="icône twitter">  Twitter</a></li><br/>
+                    <li><a href="https://www.youtube.com/"><img src="image_footer/youtube.png" alt="icône youtube"> Youtube</a></li><br/>
+                    
+                </ul>
+                </div>
+            </div>
+    
+            <div class="fin">
+                <div class="nom_site">
+                    <h1> PanemPropaganda.</h1>
+                    
+                    <div class="copyright">
+                        <p>©2020 By Clément.Sophie.Victorine</p>
+                        <br>
+                    </div>
+                </div>
+         </div>
+    
+        </div>
+    
+    </footer>
+
+</body>
+
+<script>
+var circle = document.getElementById("circle");
+var upBtn = document.getElementById("upBtn");
+var downBtn = document.getElementById("downBtn");
+
+var rotateValue = circle.style.transform;
+var rotateSum; 
+
+upBtn.onclick = function(){
+    rotateSum = rotateValue + "rotate(-90deg)";
+    circle.style.transform = rotateSum;
+    rotateValue = rotateSum;
+}
+
+downBtn.onclick = function(){
+    rotateSum = rotateValue + "rotate(+90deg)";
+    circle.style.transform = rotateSum;
+    rotateValue = rotateSum;
+}
+
+</script>
+</html>
