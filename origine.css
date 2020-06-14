@@ -1,0 +1,155 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, serif;
+    
+}
+
+
+body{
+    background-color: sienna;
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 1px 1px 1px black;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+    border-radius: 60px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    
+}
+
+.navigation ul {
+    position: relative;
+}
+
+.navigation ul li {
+    text-align: center;
+    list-style: none;
+ 
+}
+
+.navigation ul li a {
+    color:  #333;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 5px 20px;
+    display: inline-flex;
+    font-weight: 700;
+    transition: 0.5s;
+
+}
+
+.navigation ul:hover li a {
+color: black ;
+}
+
+.navigation ul li:hover a {
+    color: black ;
+    background:white;
+}
+
+.navigation ul li a:before {
+   content:'';
+   position: absolute;
+   top: 150%;
+   left: 40%;
+   transform: translate(-50%,-50%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 3em;
+   color: rgba(0,0,0,0.1);
+   border-radius: 50%;
+   z-index: -1;
+   opacity: 0;
+   font-weight: 900;
+   text-transform: uppercase;
+   letter-spacing: 500px;
+   transition: letter-spacing 0.5s, left 0.5s;
+   
+
+}
+
+.navigation ul li a:hover:before {
+content: attr(data-text);
+opacity: 1;
+left: 50%;
+letter-spacing: 10px;
+width: 9000px;
+height: 1800px;
+
+
+}
+
+
+
+
+.navigation ul li:nth-child(4n+3) a:before{
+    background: #61466E;
+}
+
+.navigation ul li:nth-child(4n+4) a:before{
+    background: #22195D;
+}
+
+
+
+
+@media screen and (max-width: 900px)
+{
+    .navigation ul li a:before {
+        content:'';
+        position: absolute;
+        top: 120%;
+        left: 40%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6em;
+        color: rgba(0,0,0,0.1);
+        border-radius: 50%;
+        z-index: -1;
+        opacity: 0;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 500px;
+        transition: letter-spacing 0.5s, left 0.5s;
+        
+     
+     }
+     
+     .navigation ul li a:hover:before {
+     content: attr(data-text);
+     opacity: 1;
+     left: 50%;
+     letter-spacing: 10px;
+     width: 9000px;
+     height: 1800px;
+     
+     
+     }
+
+
+}
+
+

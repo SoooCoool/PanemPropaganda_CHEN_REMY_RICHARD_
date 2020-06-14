@@ -1,0 +1,361 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body
+{
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    font-size: 16 px; /* taille de la police */
+    color: white;
+    background: linear-gradient(to right, grey, rgb(39, 82, 90));
+    line-height: 1.3;/* hauteur de ligne*/
+}
+
+header
+{
+    /*position: fixed;  pour que la bannière ne bouge jamais */
+    margin-bottom: 20px;
+}
+
+header .logo
+{
+    width:  100%;
+    height: auto;
+}
+
+.Bouton
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+
+.btn
+{
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: "Robot", sans-serif;
+}
+
+
+.btn:hover
+{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.background
+{
+    float: center;
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+/******************** FICHER QSID *********************/
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.container .box
+{
+    margin: 50px;
+    margin-bottom: 150px;
+    border-radius: 8px;
+    position: relative;
+    width: 350px;
+    height: 378px;
+}
+
+.container .box .img_box img
+{
+    border: 3px solid white;
+    border-radius: 8px;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .box .text_box
+{
+    border-radius: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: auto;
+    right: auto;
+    width: 100%;
+    background: linear-gradient(to right,  rgb(39, 82, 90), grey);
+    opacity: 0.99;
+    transition: transform 1s;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+
+.container .box:hover .text_box
+{
+    z-index: 1;
+    transition: transform 1s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.container .box .text_box .text
+{
+    width: auto;
+    position: relative;
+    padding: 10px;
+}
+
+.container .box .text_box .text h1
+{
+    text-align: center;
+    color : black;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.container .box .text_box .text .p
+{
+    text-align: left;
+    color : white;
+    font-weight: 300;
+    font-size: auto;
+}
+
+ 
+footer
+{
+    display: flex;
+    position: relative;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    justify-content: flex-start;
+    background-color: gray;
+    justify-content: space-between;
+    height: auto;
+}
+
+
+ 
+.bordure
+{
+ 
+  width: 100%;
+ 
+}
+ 
+.le_footer 
+{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+    
+   
+}
+
+
+ 
+.Panem 
+{
+ 
+    /*background-color: green;*/
+    padding: 15px;
+ 
+}
+ 
+.Nous
+{
+    /*background-color: purple;*/
+    padding: 15px;
+}
+ 
+.Services 
+{
+    /*background-color: red;*/
+    padding: 15px;
+}
+ 
+.Contactez 
+{
+    /*background-color: yellow;*/
+    padding: 15px;
+}
+ 
+.Panem,.Nous,.Services, .Contactez
+{
+    flex: 1; /* partage de largeur dispo par nombre de conteneurs*/
+}
+ 
+  
+a
+{
+      text-decoration: none;
+      color: black;
+      text-align: center;
+}
+
+
+ 
+/* Pour les titres du footer */
+.Panem h2
+{
+  text-align: center;
+  color: black;
+}
+ 
+.Nous h2
+{
+  text-align: center;
+  color: black;
+}
+ 
+.Services h2
+{
+  text-align: center;
+  color: black;
+}
+ 
+.Contactez h2
+{
+  text-align: center;
+  color: black;
+}
+ 
+/*Pour le texte*/
+.Panem p
+{
+  text-align: center;
+  font-size: 1.3em;
+  color: black;
+}
+
+
+ 
+  
+ 
+/*Pour la navigation de chaque colonne */
+.Panem ul
+{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.3em;
+}
+
+.Nous ul
+{
+  text-align: center;
+  list-style: none;
+  font-size: 1.3em;
+}
+ 
+.Services ul
+{
+  text-align: center;
+  list-style: none;
+  font-size: 1.3em;
+ 
+}
+ 
+.Contactez ul
+{
+  text-align: center;
+  list-style: none;
+  font-size: 1.3em;
+ 
+}
+  
+ 
+/*Pour régler la taille des icônes */
+ 
+.le_footer img
+  
+{
+      
+      flex: auto;
+      width: 10%;
+      height: auto;
+}
+
+
+ 
+/* La police pour "contactez-noous" */
+.le_footer .Contactez ul
+{
+  font-size: 1.3em;
+ 
+}
+ 
+/*Pour le copyright */
+ 
+.le_footer .fin 
+{
+  
+  width: 100%;
+  height: auto;
+ 
+}
+ 
+.fin .nom_site h1
+{
+  font-size: 2em;
+  text-align: center;
+  color: black;
+}
+ 
+.fin .copyright p
+{
+  font-size: 1em;
+  text-align: center;
+  color: black;
+}
+ 
+/* Pour adapter à l'écran*/
+  
+@media only screen and (max-width: 768px) 
+{
+    .Nous {
+      width: 50%;
+      order: 0;
+    }
+    .Panem {
+      width: 50%;
+      
+    }
+    .Services {
+      width: 50%;
+    }
+ 
+    .Contactez
+    {
+      width: 50%;
+    }
+ 
+    .Panem,
+    .Nous,
+    .Services, .Contactez {
+      flex: none;
+    }
+}

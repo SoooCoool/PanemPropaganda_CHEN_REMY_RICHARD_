@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qui sommes-nous ?</title>
+    <link rel="stylesheet" href="bas-page.css">
+</head>
+<body>
+
+    <header>
+        <img src = "img/bannière.png" alt = "logo" class = "logo">
+        
+        <div class="Bouton">
+            <a href="Articles.html" class="btn" target = "blank"> Accueil </a>
+            <a href="Origine.html" class="btn" target = "blank"> Les Origines </a>
+            <a href="CapitolTV.html" class="btn" target = "blank"> CapitolTV </a>
+        </div>
+    </header>
+
+    <div class="main">
+
+    <div class="wrapper">
+        <div class="our_team">
+           <div class="team team_1">
+               <div class="team_img">
+                 <img src="img/Sophie.jpeg" alt="team_member">    
+             </div>
+             <div class="team_role"> Developer </div>
+             
+                <div class="menu">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+               </div>
+               
+               <div class="info">
+                 <h4> <br> Sophie Chen <br></h4>
+                 <p> Étudiante en L2. <br> Passion: la couleur, grâce à elle tous les fonds ne sont pas noirs ... </p>
+               </div>
+           </div>
+           <div class="team team_2">
+              <div class="team_img">
+                 <img src="img/Victorine.jpg" alt="team_member">  
+             </div>
+             <div class="team_role"> Developer </div>
+             <div class="menu">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+               </div>
+               
+               <div class="info">
+                 <h4> Victorine Richard </h4>
+                 <p> Étudiante en L2 <br> Passion: la lecture <br> a eu la mauvaise idée d'acheter le nouveau livre de Suzanne Collin ... ce qui a conduit à la création de ce site.</p>
+               </div>
+          </div>
+           <div class="team team_3">
+             <div class="team_img">
+                 <img src="img/Clément.jpg" alt="team_member">  
+             </div>
+             <div class="team_role"> Developer </div>
+             <div class="menu">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+               </div>
+               
+               <div class="info">
+                 <h4> Clement Remy </h4>
+                 <p> Étudiant de L2. <br> Espère obtenir un 20 pour avoir écouté une bonne centaine de fois "Are you" (voir page des rebelles) <br> "Are you Are you <br> giving me a 20"</p>
+               </div>
+          </div>
+      </div>
+    </div>
+
+    <footer class="page_footer">
+      <div class="le_footer">
+  
+          <div class="Panem">
+              <h2>Panem</h2>
+              <br>
+              <div class="bordure">
+                  <p>Retrouvez chaque jours l'actualité passionnante de Panem chez vous</p>
+                  <br> <br>
+                  <ul class = "nav_footer"> 
+                      <li> <a href="Articles.html"> Panem News </a></li><br>
+                      <li> <a href="Page1.html"> Accueil </a></li>
+                  </ul>
+                  
+              </div>
+          </div>
+  
+          <div class="Nous">
+              <h2>A propos de nous</h2>
+              <br>
+              <ul class="nav_footer">
+                  <li><a href="Qui-sommes-nous.html">Qui sommes nous</a></li><br/>
+                  
+              </ul>
+  
+          </div>
+  
+          <div class="Services">
+              <h2>Services</h2>
+              <div class="bordure">
+                  <br>
+                  <ul class="nav_footer">
+                      <li><a href="Quizz.html">Quizz</a></li><br/>
+                      <li><a href="Form.html">Abonnez-vous</a></li><br/>
+                      <li><a href="Boutique.html">La boutique</a></li><br/>
+                  </ul>
+  
+              </div>
+          </div>
+  
+          <div class="Contactez">
+              <h2>Contactez-nous</h2>
+              <br>
+              <div class="bordure">
+              <ul class="nav_footer">
+                  <li><a href="https://fr-fr.facebook.com/"><img src="image_footer/facebook.png" alt="icône facebook"> Facebook </a></li><br/>
+                  <li><a href="https://www.instagram.com/"><img src="image_footer/instagram.png" alt="icône instagram"> Instagram</a></li><br/>
+                  <li><a href="https://twitter.com/explore"><img src="image_footer/twitter.png" alt="icône twitter">  Twitter</a></li><br/>
+                  <li><a href="https://www.youtube.com/"><img src="image_footer/youtube.png" alt="icône youtube"> Youtube</a></li><br/>
+                  
+              </ul>
+              </div>
+          </div>
+  
+          <div class="fin">
+              <div class="nom_site">
+                  <h1> PanemPropaganda.</h1>
+                  
+                  <div class="copyright">
+                      <p>©2020 By Clément.Sophie.Victorine</p>
+                      <br>
+                  </div>
+              </div>
+       </div>
+  
+      </div>
+  
+  </footer>
+
+    
+    
+    <script>
+    var menu_items = document.querySelectorAll(".menu");
+    
+    
+    Array.from(menu_items).forEach(function(menu){
+      menu.addEventListener("click", function(){
+        this.classList.toggle("active")
+      });
+    });
+    </script>
+    
+    </body>
+    </html>

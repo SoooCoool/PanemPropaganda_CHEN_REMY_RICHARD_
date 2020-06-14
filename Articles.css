@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Robot", sans-serif;
+}  
+
+
+header
+{
+    /*position: fixed;  pour que la bannière ne bouge jamais */
+    background: linear-gradient(to right, grey, rgb(146, 59, 1));
+    margin-bottom: 20px;
+}
+
+header .logo
+{
+    width:  100%;
+    height: auto;
+}
+
+/*********************************************************/
+
+body{
+    background: linear-gradient(to right, grey, rgb(146, 59, 1));
+    
+}
+
+.container
+{
+    max-width: auto;
+    margin: 0 auto;
+    background: #f9f9f9;
+    font-size: 24px;
+    padding: 25px;
+    background: linear-gradient(to right, grey, rgb(146, 59, 1));
+
+}
+
+.paralax-one
+{
+    background: url('img/Livre.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 900px;
+    width: auto;
+}
+
+.paralax-two
+{
+    background: url('img/Geai_moqueur.png') no-repeat center ;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+    width: auto;
+}
+
+
+.paralax-five
+{
+    background: url('img/Quizz.png') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+    width: auto;
+
+}
+
+.paralax-four
+{
+    background: url('img/FinnickPortrait.png') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+    width: auto;
+}
+
+.Bouton
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+
+.btn
+{
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: "Robot", sans-serif;
+}
+
+
+.btn:hover
+{
+    background-color: whitesmoke;
+    color: black;
+}
+
+button
+{
+    background: rgba(255, 255, 255, 0);
+    border: cornsilk solid 1px; 
+    color: white;
+    padding: 10px 30px;
+}
+
+button:hover
+{
+    background-color: whitesmoke;
+    color: black;
+}
+
+h3
+{
+    font-style: oblique;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: "Robot", sans-serif;
+    color: goldenrod;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 4%;
+}
+h4
+{
+    font-size: 20px;
+    font-family: "Robot", sans-serif;
+    color: rgb(32, 21, 0);
+    text-align: justify;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.int h4
+{
+    border: cornsilk solid 2px;
+    padding: 50px 50px ;
+}
+
+
+.int a
+{
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    margin-left: auto;
+    margin-bottom: 5%;
+
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: "Robot", sans-serif;
+}
+
+.int a:hover
+{
+    background-color: darkgoldenrod;
+    color: black;
+}
+
+/*********************************************************/
+footer
+{
+    display: flex;
+    position: relative;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    justify-content: flex-start;
+    background-color: gray;
+    justify-content: space-between;
+    height: auto;
+}
+
+
+ 
+.bordure
+{
+ 
+  width: 100%;
+ 
+}
+ 
+.le_footer 
+{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+ 
+.Panem 
+{
+ 
+    /*background-color: green;*/
+    padding: 15px;
+ 
+}
+ 
+.Nous
+{
+    /*background-color: purple;*/
+    padding: 15px;
+}
+ 
+.Services 
+{
+    /*background-color: red;*/
+    padding: 15px;
+}
+ 
+.Contactez 
+{
+    /*background-color: yellow;*/
+    padding: 15px;
+}
+ 
+.Panem,.Nous,.Services, .Contactez
+{
+    flex: 1; /* partage de largeur dispo par nombre de conteneurs*/
+}
+ 
+  
+a
+{
+      text-decoration: none;
+      color: black;
+      text-align: center;
+}
+
+
+ 
+/* Pour les titres du footer */
+.Panem h2
+{
+  text-align: center;
+  color: black;
+}
+ 
+.Nous h2
+{
+  text-align: center;
+  color: black;
+}
+ 
+.Services h2
+{
+  text-align: center;
+  color: black;
+}
+ 
+.Contactez h2
+{
+  text-align: center;
+  color: black;
+}
+ 
+/*Pour le texte*/
+.Panem p
+{
+  text-align: center;
+  font-size: 1.3em;
+  color: black;
+}
+
+
+ 
+  
+ 
+/*Pour la navigation de chaque colonne */
+.Panem ul
+{
+  text-align: center;
+  list-style: none;
+  text-decoration: underline;
+  font-size: 1.3em;
+}
+
+.Nous ul
+{
+  text-align: center;
+  list-style: none;
+  font-size: 1.3em;
+}
+ 
+.Services ul
+{
+  text-align: center;
+  list-style: none;
+  font-size: 1.3em;
+ 
+}
+ 
+.Contactez ul
+{
+  text-align: center;
+  list-style: none;
+  font-size: 1.3em;
+ 
+}
+  
+ 
+/*Pour régler la taille des icônes */
+ 
+.le_footer img
+  
+{
+      
+      flex: auto;
+      width: 10%;
+      height: auto;
+}
+
+
+ 
+/* La police pour "contactez-noous" */
+.le_footer .Contactez ul
+{
+  font-size: 1.3em;
+ 
+}
+ 
+/*Pour le copyright */
+ 
+.le_footer .fin 
+{
+  
+  width: 100%;
+  height: auto;
+ 
+}
+ 
+.fin .nom_site h1
+{
+  font-size: 2em;
+  text-align: center;
+  color: black;
+}
+ 
+.fin .copyright p
+{
+  font-size: 1em;
+  text-align: center;
+  color: black;
+}
+ 
+/* Pour adapter à l'écran*/
+  
+@media only screen and (max-width: 768px) 
+{
+    .Nous {
+      width: 50%;
+      order: 0;
+    }
+    .Panem {
+      width: 50%;
+      
+    }
+    .Services {
+      width: 50%;
+    }
+ 
+    .Contactez
+    {
+      width: 50%;
+    }
+ 
+    .Panem,
+    .Nous,
+    .Services, .Contactez {
+      flex: none;
+    }
+}
+  

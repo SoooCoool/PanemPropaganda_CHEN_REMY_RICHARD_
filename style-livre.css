@@ -1,0 +1,414 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+header
+{
+    /*position: fixed;  pour que la bannière ne bouge jamais */
+    background: linear-gradient(to right, grey, green);
+}
+
+header .logo 
+{
+    width:  100%;
+    height: auto;
+}
+
+.button
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 30px;
+    margin-top: 2%;
+    margin-bottom: 30px;
+    padding-right: 5px;
+}
+
+
+.btn
+{
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: "Robot", sans-serif;
+}
+
+.btn:hover
+{
+    background-color: whitesmoke;
+    color: black;
+}
+
+
+
+.main
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, grey, green);
+}
+
+
+.information
+{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+
+#circle
+{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+
+    transform: rotate(0deg);
+    transition: 1s;
+}
+
+.feature img
+{
+    width: 70px ;
+}
+
+.feature
+{
+    position: absolute;
+    display: flex;
+    color: #fff;
+}
+.feature div
+{
+    margin-left: 30px ;
+}
+
+.feature div p
+{
+    margin-top: 8px ;
+}
+
+.one
+{
+    top: 450px ;
+    right: 50px;
+}
+
+.two
+{
+    top: 150px;
+    left: 350px;
+    transform: rotate(-90deg);
+}
+
+.three
+{
+    bottom: 450px;
+    left: 50px;
+    transform: rotate(-180deg);
+}
+
+.four
+{
+    bottom: 150px;
+    right: 350px;
+    transform: rotate(-270deg);
+}
+
+.mobile
+{
+  display: flex;
+  flex-wrap: wrap;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.controls
+{
+    position: absolute;
+    right: 20%;
+    top: 110%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.controls h3
+{
+    margin: 15px 0;
+    color:#fff;
+
+}
+
+#upBtn
+{
+    width: 15px;
+    cursor: pointer;
+}
+
+#downBtn
+{
+    width: 15px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.overlay
+{
+  display: flex;
+  flex-wrap: wrap;
+    width: 0;
+    height: 0;
+
+    border-top: 500px solid #fff;
+    border-right: 500px solid transparent;
+    border-left: 500px solid white;
+    border-bottom: 500px solid white;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.main .btn:hover
+{
+    color: black;
+    background-color: rgba(245, 245, 245, 0.541);;
+}
+
+footer
+{
+    display: flex;
+    position: relative;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    justify-content: flex-start;
+    background-color: gray;
+    justify-content: space-between;
+    height: auto;
+}
+
+
+ 
+.bordure
+{
+ 
+  width: 100%;
+ 
+}
+ 
+.le_footer 
+{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+ 
+.Panem 
+{
+ 
+    /*background-color: green;*/
+    padding: 15px;
+ 
+}
+ 
+.Nous
+{
+    /*background-color: purple;*/
+    padding: 15px;
+}
+ 
+.Services 
+{
+    /*background-color: red;*/
+    padding: 15px;
+}
+ 
+.Contactez 
+{
+    /*background-color: yellow;*/
+    padding: 15px;
+}
+ 
+.Panem,.Nous,.Services, .Contactez
+{
+    flex: 1; /* partage de largeur dispo par nombre de conteneurs*/
+}
+ 
+  
+a
+{
+      text-decoration: none;
+      color: black;
+      text-align: center;
+}
+
+
+ 
+/* Pour les titres du footer */
+.Panem h2
+{
+  text-align: center;
+  color: black;
+}
+ 
+.Nous h2
+{
+  text-align: center;
+  color: black;
+}
+ 
+.Services h2
+{
+  text-align: center;
+  color: black;
+}
+ 
+.Contactez h2
+{
+  text-align: center;
+  color: black;
+}
+ 
+/*Pour le texte*/
+.Panem p
+{
+  text-align: center;
+  font-size: 1.3em;
+  color: black;
+}
+
+
+ 
+  
+ 
+/*Pour la navigation de chaque colonne */
+.Panem ul
+{
+  text-align: center;
+  list-style: none;
+  text-decoration: underline;
+  font-size: 1.3em;
+}
+
+.Nous ul
+{
+  text-align: center;
+  list-style: none;
+  font-size: 1.3em;
+}
+ 
+.Services ul
+{
+  text-align: center;
+  list-style: none;
+  font-size: 1.3em;
+ 
+}
+ 
+.Contactez ul
+{
+  text-align: center;
+  list-style: none;
+  font-size: 1.3em;
+ 
+}
+  
+ 
+/*Pour régler la taille des icônes */
+ 
+.le_footer img
+  
+{
+      
+      flex: auto;
+      width: 10%;
+      height: auto;
+}
+
+
+ 
+/* La police pour "contactez-noous" */
+.le_footer .Contactez ul
+{
+  font-size: 1.3em;
+ 
+}
+ 
+/*Pour le copyright */
+ 
+.le_footer .fin 
+{
+  
+  width: 100%;
+  height: auto;
+ 
+}
+ 
+.fin .nom_site h1
+{
+  font-size: 2em;
+  text-align: center;
+  color: black;
+}
+ 
+.fin .copyright p
+{
+  font-size: 1em;
+  text-align: center;
+  color: black;
+}
+ 
+/* Pour adapter à l'écran*/
+  
+@media only screen and (max-width: 768px) 
+{
+    .Nous {
+      width: 50%;
+      order: 0;
+    }
+    .Panem {
+      width: 50%;
+      
+    }
+    .Services {
+      width: 50%;
+    }
+ 
+    .Contactez
+    {
+      width: 50%;
+    }
+ 
+    .Panem,
+    .Nous,
+    .Services, .Contactez {
+      flex: none;
+    }
+}
